@@ -1,0 +1,337 @@
+@charset "UTF-8";
+/*mainvis---------------------------------------*/
+.mainvisDiv{
+    background: url(../img/common/notebook-1280538.jpg) no-repeat center center;
+    background-size: cover;
+}
+.mainvisDiv .mainvis{
+    display: block;
+    width: 740px;
+    padding: 50px;
+    margin: 0 auto;
+}
+.mainvisDiv .mainvis img{
+    display: block;
+    border: 1px solid #a81049;
+    padding: 20px;
+    margin: 0 auto;
+    background: #fff;
+}
+.mainvisDiv .mainvis .swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mainvisDiv .mainvis .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.mainvisDiv .mainvis .swiper-button-next{
+    right: 20px;
+}
+.mainvisDiv .mainvis .swiper-button-prev{
+    left: 20px;
+}
+
+
+/*common----------------------------------------*/
+.section h2{
+    text-align: center;
+    color: #a81049;
+    font-size: 30px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+/*section----------------------------------------*/
+.recommendaionDiv{
+    text-align: center;
+    display: block;
+    width: 1020px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+.recommendaionDiv .recolist .recoDiv{
+    display: block;
+    width: 33.33%;
+    float: left;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+.recoDiv .recoimg{
+    position: relative;
+    width: 100%;
+}
+.recoDiv .recoimg:after{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+.recoDiv .recoimg .imgdiv{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.recoDiv:nth-child(1) .recoimg .imgdiv{
+    background: url(../img/product/1311_big_img.png) no-repeat center center;
+    background-size: contain;
+    
+}
+.recoDiv:nth-child(2) .recoimg .imgdiv{
+    background: url(../img/product/1488_big_img.png) no-repeat center center;
+    background-size: contain;
+    
+}
+.recoDiv:nth-child(3) .recoimg .imgdiv{
+    background: url(../img/product/1492_big_img.png) no-repeat center center;
+    background-size: contain;
+    
+}
+.recoDiv:nth-child(4) .recoimg .imgdiv{
+    background: url(../img/product/1929_big_img.png) no-repeat center center;
+    background-size: contain;
+    
+}
+.recoDiv:nth-child(5) .recoimg .imgdiv{
+    background: url(../img/product/2133_big_img.png) no-repeat center center;
+    background-size: contain;
+    
+}
+.recoDiv:nth-child(6) .recoimg .imgdiv{
+    background: url(../img/product/2138_big_img.png) no-repeat center center;
+    background-size: contain;
+    
+}
+.recoDiv:nth-child(7) .recoimg .imgdiv{
+    background: url(../img/product/2142_big_img.png) no-repeat center center;
+    background-size: contain;
+    
+}
+.recoDiv:nth-child(8) .recoimg .imgdiv{
+    background: url(../img/product/2143_big_img.png) no-repeat center center;
+    background-size: contain;
+    
+}
+.recoDiv:nth-child(9) .recoimg .imgdiv{
+    background: url(../img/product/2144_big_img.png) no-repeat center center;
+    background-size: contain;
+    
+}
+.recoDiv .recoimg .imgdiv .recotag{
+    width: 40%;
+    background: #a81049;
+    color: #fff;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 30px;
+    line-height: 30px;
+}
+.recoDiv .recoinfo{
+    display: block;
+    padding: 10px 20px;;
+}
+.recoDiv a{
+    display: block;
+}
+.recoDiv .recoinfo .pdName{
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+}
+.recoDiv .recoinfo .price{
+    color: #a81049;
+}
+
+/*brandstoryDiv*/
+.brandstoryDiv{
+    color: #c2bdbd;
+    padding-bottom: 100px;
+    background-color: #363636;
+}
+.brandstoryDiv h2{
+    color: #fff;
+}
+.brandstoryDiv h2 span{
+    font-weight: 100;
+}
+.brandstoryDiv .brandstory{
+    display: block;
+    width: 1020px;
+    margin: 0 auto;
+    text-align: center;
+}
+.brandstoryDiv .youtubeWrap{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    margin-top: 50px;
+}
+.brandstoryDiv .youtubeWrap .brandstoryad{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/*noticeDiv*/
+.noticeDivWrap{
+    width: 100%;
+    background: url(../img/common/black-coffee-2847957.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 80px 0;
+}
+.noticeDiv h2{
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+.noticeDivpadding{
+    height: 500px;
+    padding: 20px;
+    max-width: 1020px;
+    margin: 0 auto;
+    position: relative;
+}
+.noticeDivpadding:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+    background: #fff;
+}
+.noticeDiv{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    border: 1px solid #a81049;
+    width: 100%;
+}
+.noticeList .notice{
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+    transition: 0.2s;
+    color: #363636;
+}
+.noticeList .notice div{
+    float: left;
+}
+.noticeList .notice .noticecate{
+    width: 20%;
+}
+.noticeList .notice .noticetit{
+    width: 80%;
+    text-align: left;
+    text-indent: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis; 
+}
+.btn_more{
+    display: block;
+    width: 20%;
+    height: 40px;
+    line-height: 40px;
+    background: #a81049;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 30px;
+    transition: 0.2s;
+}
+
+
+
+@media all and (max-width:900px){
+    .mainvisDiv{
+        background: none;
+        background-size: cover;
+    }
+    .mainvisDiv .mainvis{
+        width: 100%;
+        display: block;
+        padding: 0;
+        margin: 0 auto;
+        padding-right: 0;
+    }
+    .mainvisDiv .mainvis img{
+        width: 100%;
+        display: block;
+        border: none;
+        padding: 0;
+        background: none;
+    }
+    .mainvisDiv .mainvis .swiper-button-next{
+        display: none;
+    }
+    .mainvisDiv .mainvis .swiper-button-prev{
+        display: none;
+    }
+    
+    /*recommendaionDiv*/
+    .recommendaionDiv{
+        width: 100%;
+    }
+    .recommendaionDiv .recolist .recoDiv{
+        width: 50%;
+        padding: 20px;
+    }
+    
+    /*brandstoryDiv*/
+    .brandstoryDiv .brandstory{
+        width: 100%;
+    }
+    .brandstoryDiv .brandstory .bradtxt{
+        padding: 0 10px;
+    }
+    .brandstoryDiv .brandstory .bradtxt h2{
+        font-size: 18px;
+    }
+    
+    
+    /*notice*/
+    .noticeDivWrap{
+        width: 100%;
+    }
+    .noticeDivpadding{
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .noticeList .notice{
+        width: 90%;
+    }
+    .btn_more{
+        width: 30%;
+    }
+}

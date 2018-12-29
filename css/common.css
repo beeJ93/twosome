@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/*reset*/
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}
+fieldset,img {border:0 none}
+dl,ul,ol,menu,li {list-style:none}
+input,select,textarea,button {vertical-align:middle}
+button {border:0 none;background-color:transparent;cursor:pointer}
+body {background:#fff}
+body,th,td,input,select,textarea,button {font-size:18px;line-height:1.5;font-family:'Nanum Gothic', sans-serif; color:#333}
+a {color:#333;text-decoration:none}
+address,caption,cite,code,dfn,em,var,strong{font-style:normal;font-weight:normal}
+li img{vertical-align: top}
+h1,h2,h3,h4,h5,h6{font-family: 'Nanum Gothic', sans-serif;}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/*skipNav*/
+#skipNav{
+    position: relative;
+}
+#skipNav a{
+    background: #a81049;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    top: -99px;
+}
+#skipNav a:hover, #skipNav a:focus, #skipNav a:active{
+    top: 0;
+}
