@@ -1,0 +1,85 @@
+@charset "UTF-8";
+@media all and (max-width: 1600px){
+	h1{
+		width: 15%;
+		left: 1%
+	}
+	.headerDiv{
+		width: 100%;
+	}
+	.gnb{
+		width: 80%;
+	}
+	.gnb > ul > li{
+		width: 14.28%;
+		min-width : 0;
+	}
+	.gnb > ul > li > a{
+		padding: 5px
+	}
+}
+
+@media all and (max-width: 1020px){
+    /*recommendaionDiv*/
+    .recommendaionDiv{
+        width: 100%;
+    }
+    .recommendaionDiv .recolist .recoDiv{
+        width: 33.33%;
+        padding: 20px;
+    }
+    /*brandstoryDiv*/
+	.brandstoryDiv .brandstory{
+		width: 100%;
+	}
+    .brandstoryDiv .brandstory .bradtxt{
+        padding: 0 10px;
+    }
+    .brandstoryDiv .brandstory .bradtxt h2{
+        font-size: 18px;
+    }
+}
+@media all and (max-width:900px){
+    .headerDiv{
+        display: none;
+    }
+    .footerDiv{
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .mainvisDiv{
+        background: none;
+        background-size: cover;
+    }
+    .mainvisDiv .mainvis{
+        width: 100%;
+        display: block;
+        padding: 0;
+        margin: 0 auto;
+        padding-right: 0;
+    }
+    .mainvisDiv .mainvis img{
+        width: 100%;
+        display: block;
+        border: none;
+        padding: 0;
+        background: none;
+    }
+    .mainvisDiv .mainvis .swiper-button-next{
+        display: none;
+    }
+    .mainvisDiv .mainvis .swiper-button-prev{
+        display: none;
+    }
+    
+	/*News*/
+	.btn_more{
+		width: 50%;
+	}
+}
+@media all and (max-width:600px){
+    .recommendaionDiv .recolist .recoDiv{
+        width: 50%;
+    }
+}

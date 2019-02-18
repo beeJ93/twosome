@@ -1,8 +1,8 @@
 $(document).ready(function(){
-    /*GNB*/
-    var nav_li = $(".gnb>ul>li");
+	/*PC GNB*/
+	var nav_li = $(".gnb>ul>li");
     var nav_ul = $(".gnb>ul>li>ul");
-    var nav_a = $(".gnb > ul > li > a");
+    var nav_a = $(".gnb>ul>li>a");
     nav_li.on("mouseenter focusin", function(){
         $(this).find(nav_ul).show();
         $(this).find(nav_a).addClass("on");
@@ -19,4 +19,8 @@ $(document).ready(function(){
         }, 400);
         return false;
     });
+	
+	/*News&Notice*/
+	notice_h = $(".notice").innerHeight();
+	$(".noticeDivpadding").height(notice_h + 40);
 });

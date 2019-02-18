@@ -1,97 +1,111 @@
 @charset "UTF-8";
 /*header*/
 header{
-    text-align: center;
-    width: 100%;
-    background: #222;
+	width: 100%;
+	background: #222;
 }
 .headerDiv{
-    display: block;
-    width: 1280px;
-    margin: 0 auto;
-    position: relative;
+	position: relative;
+	height: 140px;
+	width: 1600px;
+	margin: 0 auto;
 }
-.logoDiv{
-    position: absolute;
-    top: 50%;
-    left: 0;
-    margin-top: -41.7px;
+.headerDiv a{
+	display: block;
+	color: #fff;
 }
-.logoDiv h1{
-    width: 250px;
+h1{
+	position: absolute;
+	top: 50%;
+	left: 0;
+    width: 200px;
+  	transform: translate(0%, -50%);
+	-webkit-transform: translate(0%, -50%);
+	z-index: 100;
 }
-.logoDiv h1 img{
-    width: 100%;
-    vertical-align: top;
+h1 img{
+	vertical-align: top;
+	width: 100%;
 }
 .hdtopDiv{
-    position: relative;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 60px;
 }
-.headerDiv .tophd{
-    float: right;
-    margin-top: 30px;
-    margin-bottom: 10px;
+.tophd{
+	float: right;
+	height: 40px;
+	line-height: 40px;
+	margin: 10px 0;
 }
-.headerDiv .tophd ul li{
-    float: left;
+.tophd li{
+	float: left;
 }
-.headerDiv .tophd ul li a{
-    display: block;
-    color: #fff;
-    margin: 0 10px;
-    font-size: 16px;
+.tophd li a{
+	display: block;
+	padding: 0px 10px;
+	box-sizing: border-box;
+	font-size: 14px;
+	border-radius: 5px;
+	margin-right: 10px;
 }
-.headerDiv .tophd ul li a:last-child{
-    margin-right: 0;
+.tophd li:last-child a{
+	border-right: none;
 }
-.headerDiv .gnb{
-    float: right;
-    margin-top: 10px;
+.tophd li a:hover{
+	background: #a81049;
 }
-.headerDiv .gnb a{
-    display: block;
-    color: #fff;
+.gnb{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	height: 80px;
+	margin: 0 10px;
+	z-index: 100;
 }
-.headerDiv .gnb > ul > li{
-    float: left;
-    position: relative;
+.gnb > ul > li{
+	float: left;
+	position: relative;
+	min-width: 180px;
+	transition: all 0.6s;
 }
-.headerDiv .gnb > ul > li > a{
-    display: block;
-    min-width: 100px;
-    padding: 10px 15px;
-    font-size: 22px;
+.gnb > ul > li > a{
+	padding: 15px 20px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal;
+	overflow: hidden;
 }
-.headerDiv .gnb > ul > li > a.on{
-    background: #a81049;
+.gnb li a:hover{
+	background: #a81049;
 }
-.headerDiv .gnb ul li > a span{
-    font-size: 16px;
-    opacity: 0.7;
+.gnb li a span{
+	font-size: 12px;
+	display: block;
+	opacity: 0.6;
+	padding: 2px 0;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal;
+	overflow: hidden;
 }
-.headerDiv .gnb a div span{
-    display: block;
+.gnb li ul{
+	min-width: 100%;
+	position: absolute;
+	background: #222;
+	display: none;
 }
-.headerDiv .gnb ul li ul{
-    position: absolute;
-    text-align: left;
-    display: none;
-    z-index: 100;
-    background: #333;
-    min-width: 190px;
+.gnb > ul > li > ul li a{
+	padding: 10px 0;
+	font-size: 16px;
+	opacity: 0.4;
+	transition: all 0.6s;
 }
-.headerDiv .gnb ul li ul.on{
-    display: block;
-}
-.headerDiv .gnb ul li ul li a{
-    font-size: 18px;
-    display: block;
-    padding: 10px 20px;
-    transition: 0.3s;
-    white-space: nowrap;
-}
-.headerDiv .gnb ul li ul li a:hover, .headerDiv .gnb ul li ul li a:focus, .headerDiv .gnb ul li ul li a:active{
-    background: #a81049;
+.gnb > ul > li > ul li a:hover{
+	opacity: 1;
 }
 
 /*footer*/
@@ -104,8 +118,9 @@ footer{
 }
 .footerDiv{
     display: block;
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
+	padding: 0 10px;
 }
 .footerDiv .moveup{
     opacity: 0.5;
@@ -206,13 +221,3 @@ footer{
     padding: 0;
 }
 
-@media all and (max-width:900px){
-    .headerDiv{
-        display: none;
-    }
-    .footerDiv{
-        width: 100%;
-        padding: 0 10px;
-        box-sizing: border-box;
-    }
-}

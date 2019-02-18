@@ -9,87 +9,88 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/class.css">
     <link rel="stylesheet" href="css/HFooter.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&amp;subset=korean" rel="stylesheet">
     <!--스와이프-->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/swiper.min.js"></script>
 </head>
 <body>
-    <div id="skipNav">
-        <a href="#gnb">주메뉴바로가기</a>
-        <a href="#sectionDiv">본문바로가기</a>
-    </div>
     <div id="contentWrap">
+		<div id="skipNav">
+			<a href="#gnb">주메뉴바로가기</a>
+			<a href="#sectionDiv">본문바로가기</a>
+		</div>
         <header>
             <div class="headerDiv">
-                <div class="logoDiv">
-                    <h1><a href="index.php"><img src="img/common/logo.jpg" alt="투썸플레이스"></a></h1>
-                </div>
+				<h1><a href="index.php"><img src="img/common/logo.jpg" alt="투썸플레이스"></a></h1>
                 <div class="hdtopDiv clearboth">
-                    <div class="tophd">
-                        <ul class="clearboth">
-                            <li><a href="#">로그인</a></li>
-                            <li><a href="#">회원가입</a></li>
-                            <li><a href="#">고객센터</a></li>
-                            <li><a href="#">뉴스및공지</a></li>
-                        </ul>
-                    </div>
+                    <ul class="tophd clearboth">
+						<li><a href="#">로그인</a></li>
+						<li><a href="#">회원가입</a></li>
+						<li><a href="#">고객센터</a></li>
+						<li><a href="#">뉴스 및 공지</a></li>
+					</ul>
                 </div>
-                <nav class="clearboth">
-                    <div class="gnb" id="gnb">
-                        <ul class="clearboth">
-                            <li><a href="#"><div>Brand Story<span>브랜드스토리</span></div></a>
-                                <ul>
-                                    <li><a href="#">브랜드이야기</a></li>
-                                    <li><a href="#">커피이야기</a></li>
-                                    <li><a href="#">디저트이야기</a></li>
-                                    <li><a href="#">브랜드필름</a></li>
-                                    <li><a href="#">투썸플레이스 APP 소개</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#"><div>Menu<span>메뉴</span></div></a>
-                                <ul>
-                                    <li><a href="#">신제품</a></li>
-                                    <li><a href="#">디저트</a></li>
-                                    <li><a href="#">케이크</a></li>
-                                    <li><a href="#">커피&amp;음료</a></li>
-                                    <li><a href="#">델리</a></li>
-                                    <li><a href="#">MD</a></li>
-                                    <li><a href="#">영양성분표</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#"><div>Store<span>매장정보</span></div></a>
-                                <ul>
-                                    <li><a href="#">매장찾기</a></li>
-                                    <li><a href="#">로스터리 카페</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#"><div>EVENT &amp; JOY<span>이벤트</span></div></a>
-                                <ul>
-                                    <li><a href="#">이벤트</a></li>
-                                    <li><a href="#">매장별 이벤트</a></li>
-                                    <li><a href="#">멤버십&amp;제휴카드</a></li>
-                                    <li><a href="#">디저트&amp;커피클래스</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#"><div>Franchise<span>가맹정보</span></div></a>
-                                <ul>
-                                    <li><a href="#">창업설명회</a></li>
-                                    <li><a href="#">창업정보 및 절차</a></li>
-                                    <li><a href="#">온라인 창업상담</a></li>
-                                    <li><a href="#">정보공개서</a></li>
-                                    <li><a href="#">FAQ</a></li>
-                                    <li><a href="#">가맹점 전용 금융상품</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#"><div>Corporate Sales<span>기업 및 단체 구매 안내</span></div></a>
-                                <ul>
-                                    <li><a href="#">기업 및 단체 구매 안내</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+                <nav id="gnb" class="gnb clearboth">
+					<ul class="clearboth">
+						<li><a href="#">Brand Story<span>브랜드스토리</span></a>
+							<ul>
+								<li><a href="#">브랜드이야기</a></li>
+								<li><a href="#">커피이야기</a></li>
+								<li><a href="#">디저트이야기</a></li>
+								<li><a href="#">브랜드필름</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Menu<span>메뉴</span></a>
+							<ul>
+								<li><a href="#">신제품</a></li>
+								<li><a href="#">커피&amp;음료</a></li>
+								<li><a href="#">케이크</a></li>
+								<li><a href="#">디저트</a></li>
+								<li><a href="#">델리</a></li>
+								<li><a href="#">MD</a></li>
+								<li><a href="#">영양성분표</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Store<span>매장정보</span></a>
+							<ul>
+								<li><a href="#">매장찾기</a></li>
+								<li><a href="#">로스터리 카페</a></li>
+								<li><a href="#">에스프레소 스탠드</a></li>
+							</ul>
+						</li>
+						<li><a href="#">TWOSOME APP<span>투썸플레이스 APP</span></a>
+							<ul>
+								<li><a href="#">투썸플레이스 APP 소개</a></li>
+							</ul>
+						</li>
+						<li><a href="#">EVENT &amp; JOY<span>이벤트</span></a>
+							<ul>
+								<li><a href="#">이벤트</a></li>
+								<li><a href="#">매장별 이벤트</a></li>
+								<li><a href="#">멤버십&amp;제휴카드</a></li>
+								<li><a href="#">디저트&amp;커피클래스</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Franchise<span>가맹정보</span></a>
+							<ul>
+								<li><a href="#">창업설명회</a></li>
+								<li><a href="#">창업정보 및 절차</a></li>
+								<li><a href="#">온라인 창업상담</a></li>
+								<li><a href="#">정보공개서</a></li>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">가맹점 전용 금융상품</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Corporate Sales<span>기업 및 단체 구매 안내</span></a>
+							<ul>
+								<li><a href="#">기업 및 단체 구매 안내</a></li>
+							</ul>
+						</li>
+					</ul>
                 </nav>
             </div>
         </header>
@@ -254,30 +255,17 @@
                 <div class="noticeDivWrap">
                     <div class="noticeDivpadding">
                         <div class="noticeDiv">
-                            <h2>News &amp; Notice</h2>
-                            <div class="noticeList">
-                                <a href="#" class="notice clearboth">
-                                    <div class="noticecate">공지</div>
-                                    <div class="noticetit">CJ카트 전산 작업으로 인한 서비스 일시 중단의 건 11/18, 04:00~04:30</div>
-                                </a>
-                                <a href="#" class="notice">
-                                    <div class="noticecate">공지</div>
-                                    <div class="noticetit">CJ카트 전산 작업으로 인한 서비스 일시 중단의 건 11/18, 04:00~04:30</div>
-                                </a>
-                                <a href="#" class="notice">
-                                    <div class="noticecate">공지</div>
-                                    <div class="noticetit">CJ카트 전산 작업으로 인한 서비스 일시 중단의 건 11/18, 04:00~04:30</div>
-                                </a>
-                                <a href="#" class="notice">
-                                    <div class="noticecate">공지</div>
-                                    <div class="noticetit">CJ카트 전산 작업으로 인한 서비스 일시 중단의 건 11/18, 04:00~04:30</div>
-                                </a>
-                                <a href="#" class="notice">
-                                    <div class="noticecate">공지</div>
-                                    <div class="noticetit">CJ카트 전산 작업으로 인한 서비스 일시 중단의 건 11/18, 04:00~04:30</div>
-                                </a>
+                            <div class="notice">
+                            	<h2>News &amp; Notice</h2>
+                            	<ol class="noticeList">
+									<li><a href="#">CJ카트 전산 작업으로 인한 서비스 일시 중단의 건 11/18, 04:00~04:30</a></li>
+									<li><a href="#">CJ카트 전산 작업으로 인한 서비스 일시 중단의 건 11/18, 04:00~04:30</a></li>
+									<li><a href="#">CJ카트 전산 작업으로 인한 서비스 일시 중단의 건 11/18, 04:00~04:30</a></li>
+									<li><a href="#">CJ카트 전산 작업으로 인한 서비스 일시 중단의 건 11/18, 04:00~04:30</a></li>
+									<li><a href="#">CJ카트 전산 작업으로 인한 서비스 일시 중단의 건 11/18, 04:00~04:30</a></li>
+								</ol>
+                            	<a href="#" class="btn_more">더보기</a>
                             </div>
-                            <a href="#" class="btn_more">더보기</a>
                         </div>
                     </div>
                 </div>

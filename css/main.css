@@ -72,6 +72,7 @@
     float: left;
     padding: 20px 40px;
     box-sizing: border-box;
+	transition: all 0.2s;
 }
 .recoDiv .recoimg{
     position: relative;
@@ -172,6 +173,7 @@
 }
 .brandstoryDiv h2{
     color: #fff;
+	transition: all 0.6s;
 }
 .brandstoryDiv h2 span{
     font-weight: 100;
@@ -203,18 +205,13 @@
     width: 100%;
     background: url(../img/common/black-coffee-2847957.jpg) no-repeat center center;
     background-size: cover;
-    padding: 80px 0;
-}
-.noticeDiv h2{
-    padding-top: 0px;
-    padding-bottom: 30px;
+	padding: 20px 0;
 }
 .noticeDivpadding{
-    height: 500px;
-    padding: 20px;
     max-width: 1020px;
     margin: 0 auto;
     position: relative;
+    box-sizing: border-box;
 }
 .noticeDivpadding:before{
     content: "";
@@ -228,35 +225,31 @@
 }
 .noticeDiv{
     position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	box-sizing: border-box;
+	margin: 20px;
+	text-align: center;
+}
+.notice{
     border: 1px solid #a81049;
-    width: 100%;
 }
-.noticeList .notice{
-    width: 80%;
-    height: 40px;
-    line-height: 40px;
-    display: block;
-    margin: 0 auto;
-    box-sizing: border-box;
-    transition: 0.2s;
-    color: #363636;
+.noticeList{
+	width: 95%;
+	margin: 0 auto;
 }
-.noticeList .notice div{
-    float: left;
+.noticeList li{
+	height: 40px;
+	line-height: 40px;
 }
-.noticeList .notice .noticecate{
-    width: 20%;
-}
-.noticeList .notice .noticetit{
-    width: 80%;
-    text-align: left;
-    text-indent: 10px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow:ellipsis; 
+.noticeList li a{
+	display: block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal;
+	overflow: hidden;
 }
 .btn_more{
     display: block;
@@ -268,70 +261,8 @@
     margin: 0 auto;
     margin-top: 30px;
     transition: 0.2s;
+	margin-bottom: 50px;
 }
-
-
-
-@media all and (max-width:900px){
-    .mainvisDiv{
-        background: none;
-        background-size: cover;
-    }
-    .mainvisDiv .mainvis{
-        width: 100%;
-        display: block;
-        padding: 0;
-        margin: 0 auto;
-        padding-right: 0;
-    }
-    .mainvisDiv .mainvis img{
-        width: 100%;
-        display: block;
-        border: none;
-        padding: 0;
-        background: none;
-    }
-    .mainvisDiv .mainvis .swiper-button-next{
-        display: none;
-    }
-    .mainvisDiv .mainvis .swiper-button-prev{
-        display: none;
-    }
-    
-    /*recommendaionDiv*/
-    .recommendaionDiv{
-        width: 100%;
-    }
-    .recommendaionDiv .recolist .recoDiv{
-        width: 50%;
-        padding: 20px;
-    }
-    
-    /*brandstoryDiv*/
-    .brandstoryDiv .brandstory{
-        width: 100%;
-    }
-    .brandstoryDiv .brandstory .bradtxt{
-        padding: 0 10px;
-    }
-    .brandstoryDiv .brandstory .bradtxt h2{
-        font-size: 18px;
-    }
-    
-    
-    /*notice*/
-    .noticeDivWrap{
-        width: 100%;
-    }
-    .noticeDivpadding{
-        width: 100%;
-        padding: 10px;
-        box-sizing: border-box;
-    }
-    .noticeList .notice{
-        width: 90%;
-    }
-    .btn_more{
-        width: 30%;
-    }
+.btn_more:hover{
+	background: #222;
 }
